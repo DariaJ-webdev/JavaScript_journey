@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     if (continueToZealButton) {
         continueToZealButton.addEventListener('click', () => {
-            window.location.href = 'zeal.html';
+            window.location.href = 'JavaScript_journey/zeal.html';
         });
     }
 });
