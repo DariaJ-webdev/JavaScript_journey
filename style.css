@@ -310,6 +310,10 @@ overflow: hidden;
     overflow: visible; 
 
 }
+
+.big-reveal {
+    margin-top: 20px;
+}
 /*End budget page*/
 
 /*Toronto & Car Rental*/
