@@ -91,7 +91,7 @@ const MAX_ROUNDS = 5; // Define the maximum number of rounds
 function playGame(playerChoice){
     // If the maximum number of rounds has been played, prevent further game logic
     if (roundCount >= MAX_ROUNDS) {
-        resultDisplay.textContent = "Game over! Refresh to play again.";
+        resultDisplay.textContent = "Game over! Click the button to play again.";
         return; // Exit the function
     }
 
@@ -147,7 +147,7 @@ function playGame(playerChoice){
         } else {
             finalMessage += "It's a draw! Pete volunteers to drive first, but you can't complain about his playlist! ";
         }
-        finalMessage +=  `Click the play again button if you want.`;
+        finalMessage +=  `Click the button to play again.`;
         resultDisplay.textContent = finalMessage;
     }
 }
