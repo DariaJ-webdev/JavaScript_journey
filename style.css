@@ -315,7 +315,7 @@ overflow: hidden;
 /*Toronto & Car Rental*/
 
 #Toronto-banner {
-    background: url("./Javascript_journey/toronto.jpg") no-repeat center  center;
+    background: url("./toronto.jpg") no-repeat center  center;
     position: relative; /* For positioning the pseudo-element */
     background-size: cover;
     background-position: center;
