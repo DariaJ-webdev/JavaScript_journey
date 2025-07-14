@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Skills Demonstration: Finale</title>
+     <link rel="stylesheet" href="/style.css">
+    <script src="https://kit.fontawesome.com/d3115057fc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+     
+    <section id="openroad-banner">
+        <div class="background-road-container">
+            <img src="./openroad.png" alt="photo of highway" class="banner">
+        <div class="content-overlay">
+            <h1 class="overlay">Who's Riding Shotgun First?</h1>
+            <p class="overlay"><b id="chosenAssistant"></b> finds a fun way to resolve a minor conflict between friends. Click 'start' to begin the packing race between Vacay and Pete T'Oh.</p>
+            <h1 id=myH1>Stopwatch</h1>
+         <div id="watch-container">
+         <div id="watch-display"> 
+            00:00:00:00
+        </div>
+        <div id="controls">
+            <button id="startBtn" onclick="start()">Start</button>
+            <button id="stopBtn" onclick="stop()">Stop</button>
+            <button id="resetBtn" onclick="reset()">Reset</button>
+
+        </div>
+        </div>
+           </div>
+        </div>        
+    </section>
+
+    
+   
+<section id="rockpapersci">
+    <div class=" rps-wrapper">
+        <div class="gameplay">
+        <div class="gameplay-text">
+    <p>So much for a packing race, these two tied at 0 hours, 27 minutes, 30 seconds, and 5 milli-seconds! After the race, Vacay and Pete T'Oh double checked that they had everything on their list--passport, international and Ohio driver's licenses; clothes, shoes, and toiletries, cash, credit cards, snacks, and drinks for the road. Vacay's PA proposed five rounds of Rock-Paper-Scissors-best three out of five rides shotgun to Windsor. Vacay's PA will keep the score. Just click on the image of rock, paper, or scissors for each round, five times. After getting the final results, click 'play again' to keep the fun times going. </p>
+<h1>Rock-Paper-Scissors</h1>
+<div class="choices">
+<button class="rock" onclick="playGame('rock')"><img src="./RPS/rock.png" alt="rock"></button>
+<button class="rock" onclick="playGame('paper')"><img src="./RPS/paper.png" alt="paper"></button>
+<button class="rock" onclick="playGame('scissors')"><img src="./RPS/scissors.png" alt="scissors"><button>
+    </div>
+    <div class="player">
+    <div id="playerDisplay">Vacay:</div>
+    <div id="peteDisplay">Pete T'Oh:</div>
+      </div>
+ <div id="resultDisplay"></div> 
+ <div class="scoreDisplay"> Vacay's Score:
+ <span id="playerScoreDisplay">0</span>
+
+  <div class="scoreDisplay"> Pete T'oh's Score:
+ <span id="peteScoreDisplay">0</span>
+</div>
+<div id="resultDisplay">
+  <button id="refreshButton" onclick="refreshGame()">Play Again</button>
+</div>
+    
+</div>
+</section>
+
+    <section id="and-two-for-the-road">
+        <div class="container-seeya">
+        <h1>And Two for the Road</h1>
+        <p>Vacay and Pete T'Oh are on their way to Canada. Vacay's assistant is creating videos of them for a social media travel diary.</p>
+        <p>I hope you enjoyed interacting with webpages during this llittle trek through my JavaScript skills. I've demonstrated a solid foundation in JavaScript by employing core JavaScript concepts-DOM manipulation, event handling for user interactions, management of variables and data types, control flow structures, functions, fetch and API interactions (weather app), local storage for data persistence (e.g. the assistant you chose), string and number manipulation, error handling, and basic game logic (rock, paper, scissors). <br><br>Daria Jones<br> <a href="mailto:frontendwebcraftx@gmail.com"><i class="fa-regular fa-envelope"></i></a></p>
+        </div>
+    </section>
+
+     <script src="myscript5.js"></script>
+</body>
+</html>

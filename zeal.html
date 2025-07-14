@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Skills Demonstration: A Zealous Assistant</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://kit.fontawesome.com/d3115057fc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <section id="openroad-banner">
+        <div class="background-container">
+            <img src="./Packitup.png" alt="photo of  a suitcase being packed" class="banner">
+        <div class="content-overlay">
+            <h1 class="overlay">The Zealous Assistant</h1>
+            <p class="sync">Vacay's  PA offers some useful apps. The frst one shows the current time so Vacay and Pete T'Oh can sync-up their watches:</p>
+            <div id="clock-container">
+    <div id="clock">00:00:00</div>
+</div>
+        </div>
+        </div>
+    </section>
+
+    <section id="zealous-assistant">
+        <div class="zeal-container">
+                        <div class="zeal-wrapper">
+                <div class="right">
+                    <form>
+                <h1>Temperature Conversion App</h1><br> 
+                <input type="number" id="textBox" value="0"><br><br>
+                <input type ="radio" id="toFahrenheit" name="unit">
+                <label for="toFahrenheit"> Celsius ➡️ Fahrenheit</label><br><br>
+                <input type ="radio" id="toCelsius" name="unit">
+                <label for="toCelsius"> Fahrenheit ➡️ Celsius</label><br><br>
+                <button id="temp-convert-button" type="button" onclick="convert() " class="conversion-button">Convert</button><br><br>
+                 <p id="result"></p><br>
+                 </form>
+                </div>
+                <div class="left">
+                    
+        
+
+<div class="weatherApp">
+  <form class="weatherForm">
+      <input id="weather_text" type="text" class="cityInput" placeholder="Enter city">
+      <button type="submit">Get Weather</button>
+  </form>
+  <div class="card" style="display:none"></div>
+</div>
+
+</section>
+        <section id="packrace">
+            <div class="races-container">
+                <div class="races-container-wrapper">
+                <div class="races-app"></div>
+      <form>
+        <h1 class="apps">Gasoline Conversion App</h1><br> 
+        <input type="number" id="textBoxGas" value="0"><br><br>
+                <input type ="radio" id="toGallons" name="unit">
+                
+               <label for="toGallons"> Liters ➡️ Gallons</label><br><br>
+        <input type ="radio" id="toLiters" name="unit">
+        <label for="toLiters"> Gallons ➡️ Liters </label><br>
+        <button class="conversion-button" id="gas-convert-button" type="button" onclick="convertGas() ">Convert</button><br><br>
+        <p id="resultG"></p><br>
+    </form>  
+    <div class="races-text">
+      <p>Pete T'Oh: These apps are great by the way, but speaking of fuel...</p>
+    <p>Vacay: (Sighs) Pete, we both know neither of us wants to drive first on this trip to Canada.</p>
+    <p>Pete T'Oh: Exactly! I'm strategically conserving my mental energy for navigating those distracting moose warnings.</p>
+    <p><b id="chosenAssistant"></b> : I'm so sorry, I was only trying to help with these apps.  I know! Why not have a friendly packing race to see how quickly you can get packed. Winner gets to ride shotgun!.</p>
+    <p>Vacay: A packing race? You're on, Pete!</p>
+    <p>Pete T'Oh: Wait, the loser drives, right?</p>
+    <i id="race" class="fa-solid fa-flag-checkered"></i>
+    
+    </div></div>
+        
+    </div>
+    </div>
+    </div>
+                </div>
+                
+            </div>
+
+
+        </div>
+    </section>
+ <!--API KEY 176465f10d5be8c65a5b1157a20205f6 and my
+    API call Url is: https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}--> 
+    <script src="myscript4.js" defer></script>
+</body>
+</html> 

@@ -1,0 +1,1097 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    font-family: "Roboto", sans-serif;
+    padding:0;
+    box-sizing: border-box;
+
+}
+
+body {
+    display: block;
+    margin: 8px;
+}
+
+h1, .title {
+    font-size: 38px;
+    font-weight: bold;
+    color: #1818aa;
+    text-align: center;
+}
+
+p, label, select {
+    font-size: 32px;
+    color: #1818aa;
+
+}
+/*Welcome page*/
+#welcome, #close, #green, #r-p-s {
+    text-align: left;
+    padding: 35px 30px;
+    background-color: #dffcf6;
+    height: 700px;
+
+}
+
+.container-welcome, .container-green, 
+.text-content, .races-container-wrapper,
+.gameplay, .container-seeya{           
+    
+    border: none;
+    border-radius: 20px;
+    padding: 40px;
+    width: 1200px;
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.5);
+    background-color: #f9f9f9;
+    margin:0 auto;
+        
+}
+#purple, #mathing {
+    background-color:#f9dbfd;
+    padding: 35px 30px;
+    }
+
+
+.container, .big-reveal, .textcontent{
+    border: none;
+    border-radius: 20px;
+    padding: 40px;
+    width: 1200px;
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.5);
+    background-color: #f9f9f9;
+    margin:0 auto;
+        
+}
+
+.row{
+    width:100%;
+    margin:0 auto;
+}
+
+.box-wrapper{
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 40px;
+    
+}
+
+.vacay {
+   flex-shrink: 0;
+   max-width: 380px;
+   width:100%;
+   height: auto;
+   
+}
+
+.vacay-text-content{
+    flex:1;
+    max-width: 600px;
+    text-align: left;
+
+}
+
+#continueButton {
+            /* Basic button styling */
+            padding: 10px 20px;
+            width: 250px;
+            font-size: 2em;
+            text-align: left;
+            font-weight: bold;
+            color: white;
+            background-color: #00c742;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            outline: none; 
+            box-shadow: 0 6px 0 #000; 
+
+            /* Smooth transition for all changes */
+            transition: all 0.15s ease-out;
+        }
+
+#continueButton:hover {
+            background-color: #039935; 
+            box-shadow: 0 4px 0 #494949; 
+        }
+
+#continueButton:active {
+            transform: translateY(4px); 
+            box-shadow: 0 2px 0 #494949; 
+            background-color: #007848; 
+ }
+/*End Welcome Page*/
+
+
+/*Budget page*/
+
+.container-green {
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+}
+
+.green-table-wrapper{
+
+width: 40%;
+}
+
+.green-wrapper{
+
+width: 60%;
+}
+
+table {
+border-collapse: collapse;
+font-size: 30px;
+color:#1818aa;
+padding-left: 15px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  
+}
+
+.amount {
+     text-align: right;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.object-container {
+    display: flex; 
+    justify-content: space-evenly; 
+    max-width: 1200px;
+    gap: 10px;       
+    border: none;
+    border-radius: 20px;
+    padding: 60px;
+    box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.5);
+    background-color: #f9f9f9;
+    margin:0 auto;
+}
+
+.sbside {
+    max-width: 50%; 
+    height: auto;   
+}
+
+#mathing {
+    margin:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color:#f9dbfd;
+    padding: 35px 30px;
+ }
+
+#calculator{
+background-color:  hsl(244, 80%, 31%);
+border-radius: 10px;
+max-width: 500px;
+overflow: hidden;
+
+}
+
+#display{
+ background-color: hsl(244, 80%, 31%);
+ width: 100%;
+ padding: 30px;
+ font-size: 4rem;
+ text-align: left;
+ color: #fff;
+ border-right:none;
+
+}
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    gap:10px;
+    padding:25px;
+    
+}
+ button[type="calc"] {
+    width:100px;
+    height:100px;
+    border:none;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 30%);
+    color:#fff;
+    font-size:3rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+ button[type="calc"]:hover {
+    background-color: hsl(0, 0%, 40%);
+    transform: translateY(0);
+}
+
+ button[type="calc"]:active{
+  background-color: hsl(0, 0%, 50%);;
+
+}
+
+.operator{
+    background-color: hsl(39, 92.1%, 44.7%);
+
+}
+
+.operator:hover{
+    background-color: hsl(43, 93.7%, 50.6%);
+}
+
+
+ .fa-solid  {
+    background-color: green;
+    font-size: 3rem;
+    color:#fff;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    border-radius: 50px;
+ 
+}
+
+
+.fa-solid:hover {
+    position: relative; 
+    border-radius: 50px;
+    padding: 20px 20px;
+    background-color: rgb(2, 214, 2);
+    color: white;
+    border: none;
+    cursor: pointer;
+    overflow: visible; 
+
+}
+
+#onward::after {
+    content: "Toronto, Canada"; 
+    position: absolute;
+    bottom: 100%; 
+    left: 50%;
+    transform: translateX(-50%);  
+    white-space: nowrap;
+    background-color: #333; 
+    color: white;
+    padding: 5px 10px;
+    border-radius: 50px;
+    opacity: 0; 
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease; 
+    pointer-events: none;
+    margin-bottom: 5px; 
+    z-index: 10; 
+    
+
+}
+
+ #onward:hover::after {
+    opacity: 1; 
+    visibility: visible; 
+}
+
+#onward :hover::after {
+    position: relative;
+    padding: 10px 20px;
+    background-color: rgb(2, 214, 2);
+    color: white;
+    border: none;
+    cursor: pointer;
+    overflow: visible; 
+
+}
+/*End budget page*/
+
+/*Toronto & Car Rental*/
+
+#Toronto-banner {
+    background: url("./toronto.jpg") no-repeat center  center;
+    position: relative; /* For positioning the pseudo-element */
+    background-size: cover;
+    background-position: center;
+    height:850px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    z-index: 1; /* Ensures content is above the pseudo-element */
+    
+}
+
+#rentalcar {
+    background-color:#dffcf6;
+    padding: 80px
+}
+
+ .car-text-content, .text-content {
+
+    padding-bottom: 50px;
+ }
+
+  .main-content-container {
+margin-top: 50px;
+
+  }
+
+.slider {
+    position: relative; 
+    overflow: hidden; 
+    width: 100%; 
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+
+.slides {
+    display: flex; /* Use flexbox to arrange slides, make only one will be visible */
+    width: 100%;
+    
+}
+
+.slide {
+    display: none; /* Hide all slides by default */
+    width: 100%;
+    flex-shrink: 0; /* Prevents slides from shrinking */
+}
+
+.slide.displaySlide {
+    display: block; /* Show only the slide with the 'displaySlide' class */
+}
+
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 12px 10px;
+    margin-top: -15px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color: rgba(0,0,0,0.5); /* Semi-transparent background */
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0px;
+        
+}
+
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+
+
+.next-page-button-container {
+    text-align: center; 
+    margin-top: 40px; 
+    margin-bottom: 40px; 
+    
+}
+
+.zeal-continue-button {
+    display:none;
+    padding: 10px 20px;
+    width: 200px; 
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    background-color: #00c742; 
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 6px 0 #000;
+    transition: all 0.15s ease-out;
+    margin:0 auto;
+}
+
+.zeal-continue-button:hover {
+    background-color: #039935;
+    box-shadow: 0 4px 0 #494949;
+}
+
+.zeal-continue-button:active {
+    transform: translateY(4px);
+    box-shadow: 0 2px 0 #494949;
+    background-color: #007848;
+}
+
+/* end car rental*/
+
+/*the Zealous Asistant*/
+
+.background-container {
+  position: relative; 
+  width: 100%; 
+  height: 500px; 
+  overflow: hidden; 
+  
+}
+
+.banner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  display: block; 
+  padding-bottom: 20px;
+}
+
+.content-overlay {
+  position: absolute;
+  top:37%; /* Adjust as needed */
+  left: 50%; /* Adjust as needed */
+  transform: translate(-50%, -50%); 
+  text-align: center;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: rgba(87, 85, 85, 0.5)
+}
+
+.overlay, .sync{
+ font-size: 2.5rem;
+ color: #f9f9f9
+
+}
+
+#clock {
+font-size: 4rem;
+color:#fff;
+font-family: monospace;
+font-weight: 600;
+text-align: center;
+
+}
+
+
+#zealous-assistant {
+display: flex;
+justify-content: center;
+align-items: center;
+background-color: #dffcf6;
+width: 100%;
+height: 850px;
+
+}
+
+.zeal-container {
+border: none;
+border-radius: 20px;
+padding: 50px;
+width: 1200px;
+box-shadow: 12px 12px 12px rgba(0, 0, 0, 0.5);
+background-color: #f9f9f9; 
+margin: 0 auto;
+        
+}
+
+
+.zeal-wrapper{
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 33px;
+margin: 0 auto;
+
+}
+
+/*end banner Zeal page*/
+
+#packrace {
+    background-color: #f9dbfd;
+}
+
+
+.races-container {
+    padding-top: 40px;
+    
+}
+
+ .races-container-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    gap:30px;
+    margin-top: 0; 
+    
+ }
+
+ .races-text {
+    width: 50%;
+
+ }
+    
+
+   
+.right {
+
+    margin-left: 15px;
+}
+
+.left {
+
+    margin-right: 15px;
+}
+
+.apps h1{
+    color:#1312c8;
+    font-size: 2em;
+    }
+
+form{
+    background-color: hsl(0,  0%, 100%);
+    text-align: center;
+    max-width:350px;
+    margin: auto;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 15px  rgba(0, 0, 0, .5); 
+        }
+
+#textBox, #textBoxGas{
+        width: 50%;
+        text-align:center;
+        font-size: 2em;
+        font-weight: bolder;
+        border: 2px solid hsla(0, 0%, 20%, 0.3);
+        border-radius: 8px;
+        margin-bottom: 15px;
+        overflow:hidden;
+        color: hsla(0, 0%, 20%, 0.3);
+        
+        
+        }
+
+ .conversion-button, button[type="submit"] , #refreshButton{
+    padding: 5px 10px;
+    font-size: 2em;
+    font-weight: bold;
+    color: white;
+    background-color: hsl(122, 39%, 50%);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0 4px 0 #5c5b5b;  
+    transition: all 0.15s ease-out;
+    margin-top: 10px;
+        }
+
+ .conversion-button:hover , button[type="submit"], #refreshButton:hover{
+    background-color: hsl(122, 39%, 40%);
+    box-shadow: 0 4px 0 #494949; 
+ }
+ .conversion-button:active, button[type="submit"], #refreshButton:active {
+    transform: translateY(4px); 
+    box-shadow: 0 2px 0 #494949; 
+    background-color: hsl(122, 39%, 40%);
+ }
+
+ label {
+    font-size: 1.5em;
+    font-weight: 600;
+ }
+
+.result {
+ font-size: 1.75em;
+ font-weight: bold;
+
+ }
+
+
+ /*Weather app*/
+
+     .weatherForm {
+        margin: 20px;
+     }
+
+     .weatherApp {
+        max-width: 100%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+
+     .cityInput {
+        font-weight: bold;
+        padding: 10px;
+        font-size:2rem;
+        border: 2px solid hsla(0, 0%, 20%, 0.3);
+        border-radius: 10px;
+        margin:10px;
+        width: 300px;
+     }
+  .card{
+        background: linear-gradient(180deg, hsl(210, 100%, 75%), hwb(40 50% 0%));
+        padding: 0px 15px 2px;
+        box-shadow: 2px 2px 5px hsla(0, 0%, 0%, .5);
+        max-width:480px;
+        max-height: 450px;;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+        margin: 15px;
+        overflow-y: auto;        
+        word-wrap: break-word; 
+    
+        }
+
+
+     .cityDisplay, 
+     .tempDisplay {
+        font-weight: bold;
+        font-size: 2.5rem;
+        color: hsla(0, 0%, 0%, .75);
+        margin-bottom:none;
+        
+     }
+
+     .humidityDisplay,
+     .windDisplay{
+        font-weight: bold;
+        
+     }
+
+      .descDisplay{
+        font-weight: 600;
+        font-style: italic;
+     }
+
+     
+     .errorDisplay{
+        font-weight: 600;
+        color: hsla(0, 0%, 0%, .75);
+     }
+
+
+      .weatherEmoji{
+        margin: 0;
+        font-size: 5rem;
+      }
+
+      /*End Zealous Assistant-thank God!*/
+
+      /*finale*/
+      
+
+.background-road-container {
+  position: relative; 
+  width: 100%; 
+  height: 700px; 
+  overflow: hidden; 
+  
+}
+
+#stopwatch {
+ display: flex;
+ flex-direction:  column;
+ align-items: center;
+ background-color: hsl(0,0%, 90%);
+ 
+
+}
+
+#myH1{
+    font-size: 3rem;
+    color: hsl(0, 24%, 96%);
+    margin-bottom:0;
+}
+
+#watch-container{
+background-color: #fff;
+max-width: 800px;
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+border: 5px solid;
+padding: 20px;
+border-radius: 30px;
+margin-bottom: 10px;
+margin: 0 auto;
+
+}
+
+
+#watch-display {
+font-size: 3rem;
+text-align: center;
+font-weight: 600;
+color:hsl(0, 0%, 20%);
+text-shadow: 2px 2px 2px hsla(0,0%, 0% 0.75);
+margin-bottom: 0px;
+}
+
+
+#controls button {
+ font-size: 1.5rem;
+ color:#fff;
+ border: none;
+ border-radius: 10px;
+ padding: 10px;
+ margin-left: 5px;
+ text-align: center;
+ cursor:pointer;
+ 
+}
+
+#startBtn {
+background-color: rgb(10, 128, 10);
+}
+
+#stopBtn {
+background-color: rgb(206, 8, 8);
+}
+
+#resetBtn{
+background-color: rgb(22, 22, 214);
+}
+
+
+#startBtn:hover {
+background-color: rgb(6, 78, 6);
+
+}
+
+#stopBtn:hover {
+background-color: rgb(156, 6, 6);
+}
+
+#resetBtn:hover{
+background-color: rgb(17, 17, 148);
+}
+
+/*Rock Paper Scissors*/
+
+ #and-two-for-the-road {
+    background-color:#f9dbfd;
+     height:800px;
+     padding:50px 30px;
+     margin:0
+    }
+
+   
+
+#rockpapersci{
+align-items: center;
+padding: 50px;
+background-color: #dffcf6;
+}
+
+.choices {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+padding: 2px;
+gap: 40px;
+border:none;
+border-radius: 30px;
+margin:0 auto;
+
+}
+
+
+h1{
+font-size: 3rem;
+text-align: center;
+
+}
+
+.player {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px;
+}
+
+
+img {
+width: 30%;
+height:auto;
+padding: 0;
+
+}
+
+
+#playerDisplay, #peteDisplay{
+font-size: 2rem;
+
+}
+
+#resultDisplay{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.rock {
+    background-color: hsl(60, 3%, 55%);
+    border-radius: 20px;
+}
+
+.rock:hover{
+background-color: hsl(60, 10%, 80%);
+cursor:pointer;
+
+}
+
+.greenText, #playerScoreDisplay{
+    color:hsl(130, 87%, 34%);
+}
+
+
+.redText, #peteScoreDisplay{
+    color: hsl(0, 92%, 31%);
+
+}
+
+.scoreDisplay{
+font-size: 5rem;
+
+}
+
+
+/* --- Media Queries for Tablets (max-width: 768px) --- */
+@media (max-width: 768px) {
+    /* Adjust general font sizes */
+    h1, .title {
+        font-size: 2.5rem; /* Smaller for tablets */
+    }
+
+    p, label, select {
+        font-size: 1.5rem; /* Smaller for tablets */
+    }
+
+    /* Main container adjustments */
+    .container-welcome,
+    .container-green,
+    .text-content,
+    .races-container-wrapper,
+    .gameplay,
+    .container,
+    .big-reveal,
+    .textcontent,
+    .zeal-container {
+        width: 95%; /* Make containers more flexible */
+        padding: 20px; /* Reduce padding */
+    }
+
+    /* Flexbox layout changes for stacked content */
+    .zeal-wrapper, /* For temperature and weather apps */
+    .races-container-wrapper, /* For gas conversion and race text */
+    .object-container /* For budget page images and table */ {
+        flex-direction: column; /* Stack items vertically */
+        gap: 20px; /* Adjust gap between stacked items */
+        padding: 20px; /* Adjust padding if needed */
+    }
+
+    .right, .left, .races-text, .green-table-wrapper, .green-wrapper, .sbside {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%; /* Take full width when stacked */
+        max-width: 100%; /* Ensure they don't exceed container */
+    }
+
+    /* Adjust button widths for better fit */
+    #continueButton, .zeal-continue-button {
+        width: 100%; /* Full width for better touch target */
+        font-size: 1.5em; /* Smaller font */
+    }
+
+    /* Stop Watch adjustments */
+    #watch-container {
+        padding: 15px;
+    }
+
+    #watch-display {
+        font-size: 2.5rem; /* Smaller stopwatch display */
+    }
+
+    #controls button {
+        font-size: 1.2rem; /* Smaller control buttons */
+        padding: 8px;
+    }
+
+    /* Rock, Paper, Scissors adjustments */
+    .choices {
+        gap: 20px; /* Reduce gap between RPS buttons */
+        flex-wrap: wrap; /* Allow buttons to wrap if screen is very narrow */
+    }
+
+    .choices button {
+        flex: 1 1 45%; /* Allow buttons to flex and take up roughly half width */
+        max-width: 150px; /* Keep a reasonable max width for buttons */
+        padding: 10px; /* Adjust button padding */
+    }
+
+    .player {
+        flex-direction: column; /* Stack player and pete displays */
+        gap: 10px;
+    }
+
+    #playerDisplay, #peteDisplay {
+        font-size: 1.5rem; /* Smaller score labels */
+    }
+
+    #resultDisplay {
+        font-size: 2rem; /* Smaller result text */
+    }
+
+    .scoreDisplay {
+        font-size: 3rem; /* Significantly smaller score numbers */
+    }
+
+    /* Weather App adjustments */
+    .cityInput {
+        width: 90%; /* Make input flexible */
+        font-size: 1.5rem;
+    }
+
+    .card {
+        padding: 10px 5px;
+        margin: 10px;
+    }
+
+    .cityDisplay, .tempDisplay {
+        font-size: 2rem; /* Smaller weather city/temp */
+    }
+
+    .weatherEmoji {
+        font-size: 4rem; /* Smaller weather emoji */
+    }
+
+    /* Calculator buttons */
+    button[type="calc"] {
+        width: 70px; /* Make calculator buttons smaller */
+        height: 70px;
+        font-size: 2rem;
+    }
+
+    #display {
+        font-size: 3rem; /* Smaller calculator display */
+        padding: 20px;
+    }
+
+    /* Conversion app forms */
+    form {
+        max-width: 95%; /* Allow forms to take more width */
+    }
+
+    #textBox, #textBoxGas {
+        width: 80%; /* Make text boxes wider within form */
+        font-size: 1.5em;
+    }
+
+    .conversion-button, button[type="submit"], #refreshButton {
+        font-size: 1.5em; /* Smaller conversion buttons */
+        padding: 8px 15px;
+    }
+}
+
+/* --- Media Queries for Mobile Phones (max-width: 480px) --- */
+@media (max-width: 480px) {
+    /* Further reduce general font sizes for very small screens */
+    h1, .title {
+        font-size: 2rem;
+    }
+
+    p, label, select {
+        font-size: 1.2rem;
+    }
+
+    /* Adjust padding for overall sections */
+    #welcome, #close, #green, #r-p-s, #purple, #mathing, #rentalcar, #and-two-for-the-road, #packrace {
+        padding: 20px 15px; /* Reduce section padding */
+        height: auto; /* Allow height to adjust naturally */
+    }
+
+    /* Reduce gaps and padding for various elements */
+    .box-wrapper, .zeal-wrapper, .races-container-wrapper, .object-container {
+        gap: 15px;
+    }
+
+    /* Stop watch specific adjustments */
+    #watch-display {
+        font-size: 2rem;
+    }
+
+    #controls button {
+        font-size: 1rem;
+        padding: 5px;
+    }
+
+    /* Rock, Paper, Scissors image sizing and button layout */
+    .choices button {
+        flex: 1 1 100%; /* Make buttons full width on small mobiles */
+        max-width: 100%;
+        margin-bottom: 10px; /* Add space between stacked buttons */
+    }
+
+    img {
+        width: 50%; /* Adjust image size within RPS buttons if needed */
+        margin: 0 auto;
+        display: block;
+    }
+
+    #playerDisplay, #peteDisplay {
+        font-size: 1.2rem;
+    }
+
+    #resultDisplay {
+        font-size: 1.5rem;
+    }
+
+    .scoreDisplay {
+        font-size: 2.5rem;
+    }
+
+    /* Calculator buttons on very small screens */
+    button[type="calc"] {
+        width: 60px; /* Even smaller calculator buttons */
+        height: 60px;
+        font-size: 1.5rem;
+    }
+
+    #display {
+        font-size: 2.5rem;
+    }
+
+    /* Adjust general form elements for very small screens */
+    #textBox, #textBoxGas {
+        width: 90%;
+        font-size: 1.2em;
+    }
+
+    label {
+        font-size: 1.2em;
+    }
+
+    .conversion-button, button[type="submit"], #refreshButton {
+        font-size: 1.2em;
+        padding: 6px 12px;
+    }
+}

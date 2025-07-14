@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Skills Demonstration: Vacay's Budget</title>
+    <link rel="stylesheet" href="/style.css">
+    <script src="https://kit.fontawesome.com/d3115057fc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <section id="green">
+        <div class="container-green">
+            <div class="green-wrapper">
+    <h1>Setting the $Budget </h1>
+    <p>Vacay is no stranger to trip planning. She knows the first step for any great trip is setting a budget. She and her best friend, Pete T'Oh pulled their resources and now it's time to crunch the numbers.
+   </p>
+    <p><b id="chosenAssistant"></b> is ready to give them a hand and make sure that the math is "mathing!"  Help her double-check Pete's numbers with this handy calculator app!</p>
+    </div>
+
+    <div class="green-table-wrapper">
+        <table class="budget">
+        <tr>
+            <th>Item</th>
+            <th>Estimate</th>
+        </tr>
+        <tr>
+            <td>Car Rental & Insurance</td>
+            <td class="amount">450</td>
+        </tr>
+        <tr>
+            <td>Parking & Tolls</td>
+            <td class="amount">75</td>
+        </tr>
+        <tr>
+            <td>Lodging-4 days/3 nights</td>
+            <td class="amount">800</td>
+        </tr>
+        <tr>
+            <td>Food & Beverage</td>
+            <td class="amount">400</td>
+        </tr>
+        <tr>
+            <td>Entertainment & Sightseeing</td>
+            <td class="amount">175</td>
+        </tr>
+        <tr>
+            <td>Miscellaneous</td>
+            <td class="amount">50</td>
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td class="amount">$1, 950</td>
+        </tr> 
+        </table>
+        </div>
+
+
+
+    </div>
+    </div>
+</section>
+
+    <section id="mathing">
+    <div class="object-container">
+<div id="calculator" class="sbside">
+    
+ <input id="display" read only>
+<div id="keys">
+<button type="calc" onclick="appendToDisplay('+')" class="operator">+</button>
+<button type="calc" onclick="appendToDisplay('7')" >7</button>
+<button type="calc" onclick="appendToDisplay('8')" >8</button>
+<button type="calc" onclick="appendToDisplay('9')" >9</button>
+<button type="calc" onclick="appendToDisplay('-')" class="operator">-</button> 
+<button type="calc" onclick="appendToDisplay('4')" >4</button>
+<button type="calc" onclick="appendToDisplay('5')" >5</button>
+<button type="calc" onclick="appendToDisplay('6')">6</button>
+<button type="calc" onclick="appendToDisplay('*')" class="operator">*</button>
+<button type="calc" onclick="appendToDisplay('1')" >1</button>
+<button type="calc" onclick="appendToDisplay('2')" >2</button>
+<button type="calc" onclick="appendToDisplay('3')" >3</button>
+<button type="calc" onclick="appendToDisplay('/')" class="operator">/</button>
+<button type="calc" onclick="appendToDisplay('0')" >0</button>
+<button type="calc" onclick="appendToDisplay('.')" >.</button>
+<button type="calc" onclick="calculate()" >=</button>
+<button type="calc" onclick="clearDisplay()" class="operator">C</button>
+</div>
+
+</div>
+<img src="./PTO.png" alt="Pete T'Oh, a brown wallet, is standing with the budget sheet" class="sbside">
+    </div>        
+    
+   </section>
+
+   <section id="reveal">
+    <div class="big-reveal">
+        <p> Thank you, we're glad to see the numbers checked out! Based on their budget, Vacay and her bestie, Pete T'Oh decided they can afford a fantastic tip to....<br><br>
+      Hint: Hover over the map pin to reveal their destination;  click to continue.</p><br><br>
+ <i id="onward" class="fa-solid fa-map-location-dot"></i>
+ </div>
+ </section>
+
+   
+
+
+
+
+
+
+
+
+
+
+<script src="myscript2.js"></script>
+    
+</body>
+</html>
