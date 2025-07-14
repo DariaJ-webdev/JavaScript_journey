@@ -147,7 +147,7 @@ function playGame(playerChoice){
         } else {
             finalMessage += "It's a draw! Pete volunteers to drive first, but you can't complain about his playlist! ";
         }
-        finalMessage +=  `Refresh to play again.`;
+        finalMessage +=  `Click the play again button if you want.`;
         resultDisplay.textContent = finalMessage;
     }
 }
