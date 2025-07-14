@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const destinationButton = document.getElementById('race');
     if (destinationButton) {
         destinationButton.addEventListener('click', () => {
-            window.location.href = 'JavaScript_journey/finale.html';
+            window.location.href = '/JavaScript_journey/finale.html';
         });
     }
 });
