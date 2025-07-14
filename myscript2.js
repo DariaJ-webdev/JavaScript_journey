@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', () => { // Ensure HTML is loaded b
     if (destinationButton) { // Check if the button exists before adding listener
         destinationButton.addEventListener('click', () => {
             // Replace 'your-destination-page.html' with the actual URL you want to navigate to
-            window.location.href = 'JavaScript_journey/car.html';
+            window.location.href = '/JavaScript_journey/car.html';
         });
     }
 });
