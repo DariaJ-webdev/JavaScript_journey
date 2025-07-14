@@ -23,7 +23,7 @@ dropdown.addEventListener('change', (event) => {
 // Add an event listener to the continue button
 continueButton.addEventListener('click', () => {
    
-    window.location.href = 'Javascript_journey/budget.html'; 
+    window.location.href = 'JavaScript_journey/budget.html'; 
     localStorage.setItem('chosenAssistant', dropdown.value);
 });
 
