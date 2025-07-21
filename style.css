@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
-    font-family: "Roboto", sans-serif;
+    font-family: "Montserrat", sans-serif;
     padding:0;
     box-sizing: border-box;
 
@@ -834,7 +834,7 @@ text-align: center;
 
 
 img {
-width: 30%;
+width: 300px;
 height:auto;
 padding: 0;
 
@@ -1055,7 +1055,7 @@ font-size: 5rem;
     }
 
     img {
-        width: 50%; /* Adjust image size within RPS buttons if needed */
+        width: 650px; 
         margin: 0 auto;
         display: block;
     }
