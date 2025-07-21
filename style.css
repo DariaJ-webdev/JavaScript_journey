@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 *{
-    font-family: "Roboto", sans-serif;
+    font-family: "Montserrat", sans-serif;
     padding:0;
     box-sizing: border-box;
 
@@ -52,7 +52,9 @@ p, label, select {
     }
 
 
-.container, .big-reveal, .textcontent{
+.container, 
+.big-reveal, 
+.textcontent{
     border: none;
     border-radius: 20px;
     padding: 40px;
@@ -176,10 +178,22 @@ tr:nth-child(even) {
     margin:0 auto;
 }
 
-.sbside {
-    max-width: 50%; 
-    height: auto;   
+.sbside__img {
+    max-width: 410px;
+    width:100%;
+    height: 100%;   
+    }
+
+.sbside__calculator{
+    max-height: 460px;
+    width:100%;
+    height: 100%;
+    background-color:  hsl(244, 80%, 31%);
+    border-radius: 10px;
+    max-width: 500px;
+
 }
+
 
 #mathing {
     margin:0;
@@ -189,42 +203,39 @@ tr:nth-child(even) {
     height: 100vh;
     background-color:#f9dbfd;
     padding: 35px 30px;
+    margin-bottom: 50px;
  }
 
-#calculator{
-background-color:  hsl(244, 80%, 31%);
-border-radius: 10px;
-max-width: 500px;
-overflow: hidden;
-
-}
 
 #display{
  background-color: hsl(244, 80%, 31%);
  width: 100%;
- padding: 30px;
- font-size: 4rem;
+ max-width:350px;
+ padding: 8px;
+ font-size: 2.5rem;
  text-align: left;
  color: #fff;
  border-right:none;
-
+ 
 }
 
 #keys {
     display: grid;
     grid-template-columns: repeat(4 , 1fr);
-    gap:10px;
-    padding:25px;
-    
-}
+    row-gap:5px;
+    column-gap: 0px;
+    padding: 5px 5px 15px 15px;
+    }
+
  button[type="calc"] {
-    width:100px;
-    height:100px;
+    width:auto;
+    height:auto;
+    max-width:70px;
     border:none;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: hsl(0, 0%, 30%);
     color:#fff;
-    font-size:3rem;
+    font-size:2rem;
     font-weight: bold;
     cursor: pointer;
 }
@@ -281,8 +292,9 @@ overflow: hidden;
     left: 50%;
     transform: translateX(-50%);  
     white-space: nowrap;
-    background-color: #333; 
+    background-color: rgb(2, 214, 2);
     color: white;
+    font-size: 30px;
     padding: 5px 10px;
     border-radius: 50px;
     opacity: 0; 
@@ -465,7 +477,7 @@ margin-top: 50px;
   text-align: center;
   padding: 20px;
   border-radius: 8px;
-  background-color: rgba(87, 85, 85, 0.5)
+  background-color: rgba(87, 85, 85, 0.5);
 }
 
 .overlay, .sync{
@@ -643,6 +655,7 @@ form{
         margin:10px;
         width: 300px;
      }
+
   .card{
         background: linear-gradient(180deg, hsl(210, 100%, 75%), hwb(40 50% 0%));
         padding: 0px 15px 2px;
@@ -788,9 +801,9 @@ background-color: rgb(17, 17, 148);
 
  #and-two-for-the-road {
     background-color:#f9dbfd;
-     height:800px;
-     padding:50px 30px;
-     margin:0
+    width:100%;
+    padding:45px 25px;
+    margin:0;
     }
 
    
@@ -815,10 +828,14 @@ margin:0 auto;
 }
 
 
-h1{
-font-size: 3rem;
+.rps h1{
+font-size: 2rem;
 text-align: center;
 
+}
+
+.rps p{
+font-size: 1.25rem;
 }
 
 .player {
@@ -828,23 +845,21 @@ text-align: center;
     padding: 10px;
 }
 
-
-img {
-width: 30%;
-height:auto;
-padding: 0;
-
-}
-
+.rps-img {
+        width: 100%;
+        max-width: 130px;
+        margin: 0 auto;
+        display: block;
+    }
 
 #playerDisplay, #peteDisplay{
-font-size: 2rem;
+    font-size: 1.75rem;
 
 }
 
 #resultDisplay{
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 600;
 }
 
@@ -870,20 +885,22 @@ cursor:pointer;
 }
 
 .scoreDisplay{
-font-size: 5rem;
+font-size: 3rem;
 
 }
+
+
 
 
 /* --- Media Queries for Tablets (max-width: 768px) --- */
 @media (max-width: 768px) {
     /* Adjust general font sizes */
     h1, .title {
-        font-size: 2.5rem; /* Smaller for tablets */
+        font-size: 1.5rem; /* Smaller for tablets */
     }
 
     p, label, select {
-        font-size: 1.5rem; /* Smaller for tablets */
+        font-size: 1rem; /* Smaller for tablets */
     }
 
     /* Main container adjustments */
@@ -896,30 +913,81 @@ font-size: 5rem;
     .big-reveal,
     .textcontent,
     .zeal-container {
-        width: 95%; /* Make containers more flexible */
+        width: 90%; /* Make containers more flexible */
         padding: 20px; /* Reduce padding */
     }
 
     /* Flexbox layout changes for stacked content */
-    .zeal-wrapper, /* For temperature and weather apps */
-    .races-container-wrapper, /* For gas conversion and race text */
-    .object-container /* For budget page images and table */ {
+    .zeal-wrapper, 
+    .races-container-wrapper, 
+    .object-container,
+    .container-green {
         flex-direction: column; /* Stack items vertically */
         gap: 20px; /* Adjust gap between stacked items */
         padding: 20px; /* Adjust padding if needed */
     }
 
-    .right, .left, .races-text, .green-table-wrapper, .green-wrapper, .sbside {
+    .right, 
+    .left, 
+    .races-text, 
+    .green-wrapper,
+    .sbside,
+    .sbside-calculator,
+    .sbside__img {
         margin-left: 0;
         margin-right: 0;
         width: 100%; /* Take full width when stacked */
         max-width: 100%; /* Ensure they don't exceed container */
     }
 
+     .green-table-wrapper{
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%; 
+        max-width: 80px; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+     }
+
+     #onward::after {
+        font-size: 16px;
+        padding: 2.5px 5px;
+        border-radius: 50px;
+        background-color: rgb(2, 214, 2);
+     }
+
+      .background-container {
+        height: 350px;
+      }
+
+      .content-overlay {
+        padding: 20px; 
+        top: 45%;
+        max-height: 350px;
+        width:100%;
+      }
+
+       .overlay, .sync {
+        font-size: 1.25rem;
+        height: auto;
+        width:100%;
+        
+        
+       }
+
+
+    #clock {
+        font-size: 2.5rem;
+    }
+
+     
+
     /* Adjust button widths for better fit */
     #continueButton, .zeal-continue-button {
         width: 100%; /* Full width for better touch target */
-        font-size: 1.5em; /* Smaller font */
+        font-size: 1.25em; /* Smaller font */
     }
 
     /* Stop Watch adjustments */
@@ -963,6 +1031,17 @@ font-size: 5rem;
 
     .scoreDisplay {
         font-size: 3rem; /* Significantly smaller score numbers */
+    }
+
+    .container-seeya{
+        font-size:1.2rem;
+        padding: 10px 10px; 
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 500px;
+        width:100%;
     }
 
     /* Weather App adjustments */
@@ -1010,6 +1089,19 @@ font-size: 5rem;
         font-size: 1.5em; /* Smaller conversion buttons */
         padding: 8px 15px;
     }
+
+    .rps-img {
+        width: 100%;
+        max-width: 130px;
+        margin: 0 auto;
+        display: block;
+    }
+
+
+
+
+
+
 }
 
 /* --- Media Queries for Mobile Phones (max-width: 480px) --- */
@@ -1051,8 +1143,9 @@ font-size: 5rem;
         margin-bottom: 10px; /* Add space between stacked buttons */
     }
 
-    img {
-        width: 50%; /* Adjust image size within RPS buttons if needed */
+    .rps-img {
+        width: 100%;
+        max-width: 130px;
         margin: 0 auto;
         display: block;
     }
