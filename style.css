@@ -2,6 +2,7 @@
 
 *{
     font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat", sans-serif;
     padding:0;
     box-sizing: border-box;
 
@@ -321,6 +322,10 @@ tr:nth-child(even) {
     cursor: pointer;
     overflow: visible; 
 
+}
+
+.big-reveal {
+    margin-top: 20px;
 }
 /*End budget page*/
 
@@ -845,12 +850,14 @@ font-size: 1.25rem;
     padding: 10px;
 }
 
-.rps-img {
-        width: 100%;
-        max-width: 130px;
-        margin: 0 auto;
-        display: block;
-    }
+
+img {
+width: 30%;
+height:auto;
+padding: 0;
+
+}
+
 
 #playerDisplay, #peteDisplay{
     font-size: 1.75rem;
@@ -910,7 +917,6 @@ font-size: 3rem;
     .races-container-wrapper,
     .gameplay,
     .container,
-    .big-reveal,
     .textcontent,
     .zeal-container {
         width: 90%; /* Make containers more flexible */
@@ -1143,9 +1149,8 @@ font-size: 3rem;
         margin-bottom: 10px; /* Add space between stacked buttons */
     }
 
-    .rps-img {
-        width: 100%;
-        max-width: 130px;
+    img {
+        width: 50%; /* Adjust image size within RPS buttons if needed */
         margin: 0 auto;
         display: block;
     }
