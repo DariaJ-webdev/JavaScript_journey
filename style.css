@@ -896,299 +896,88 @@ font-size: 3rem;
 }
 
 
-
-
-/* --- Media Queries for Tablets (max-width: 768px) --- */
-@media (max-width: 768px) {
-    /* Adjust general font sizes */
-    h1, .title {
-        font-size: 1.5rem; /* Smaller for tablets */
-    }
-
-    p, label, select {
-        font-size: 1rem; /* Smaller for tablets */
-    }
-
-    /* Main container adjustments */
+@media screen and (max-width: 768px) {
+    /* Main container and box adjustments for tablet view */
     .container-welcome,
     .container-green,
     .text-content,
     .races-container-wrapper,
     .gameplay,
+    .container-seeya,
     .container,
+    .big-reveal,
     .textcontent,
-    .zeal-container {
-        width: 90%; /* Make containers more flexible */
-        padding: 20px; /* Reduce padding */
-    }
-
-    /* Flexbox layout changes for stacked content */
-    .zeal-wrapper, 
-    .races-container-wrapper, 
     .object-container,
-    .container-green {
-        flex-direction: column; /* Stack items vertically */
-        gap: 20px; /* Adjust gap between stacked items */
-        padding: 20px; /* Adjust padding if needed */
-    }
-
-    .right, 
-    .left, 
-    .races-text, 
-    .green-wrapper,
-    .sbside,
-    .sbside-calculator,
-    .sbside__img {
-        margin-left: 0;
-        margin-right: 0;
-        width: 100%; /* Take full width when stacked */
-        max-width: 100%; /* Ensure they don't exceed container */
-    }
-
-     .green-table-wrapper{
-        margin-left: 0;
-        margin-right: 0;
-        width: 100%; 
-        max-width: 80px; 
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-     }
-
-     #onward::after {
-        font-size: 16px;
-        padding: 2.5px 5px;
-        border-radius: 50px;
-        background-color: rgb(2, 214, 2);
-     }
-
-      .background-container {
-        height: 350px;
-      }
-
-      .content-overlay {
-        padding: 20px; 
-        top: 45%;
-        max-height: 350px;
-        width:100%;
-      }
-
-       .overlay, .sync {
-        font-size: 1.25rem;
-        height: auto;
-        width:100%;
-        
-        
-       }
-
-
-    #clock {
-        font-size: 2.5rem;
-    }
-
-     
-
-    /* Adjust button widths for better fit */
-    #continueButton, .zeal-continue-button {
-        width: 100%; /* Full width for better touch target */
-        font-size: 1.25em; /* Smaller font */
-    }
-
-    /* Stop Watch adjustments */
-    #watch-container {
-        padding: 15px;
-    }
-
-    #watch-display {
-        font-size: 2.5rem; /* Smaller stopwatch display */
-    }
-
-    #controls button {
-        font-size: 1.2rem; /* Smaller control buttons */
-        padding: 8px;
-    }
-
-    /* Rock, Paper, Scissors adjustments */
-    .choices {
-        gap: 20px; /* Reduce gap between RPS buttons */
-        flex-wrap: wrap; /* Allow buttons to wrap if screen is very narrow */
-    }
-
-    .choices button {
-        flex: 1 1 45%; /* Allow buttons to flex and take up roughly half width */
-        max-width: 150px; /* Keep a reasonable max width for buttons */
-        padding: 10px; /* Adjust button padding */
-    }
-
-    .player {
-        flex-direction: column; /* Stack player and pete displays */
-        gap: 10px;
-    }
-
-    #playerDisplay, #peteDisplay {
-        font-size: 1.5rem; /* Smaller score labels */
-    }
-
-    #resultDisplay {
-        font-size: 2rem; /* Smaller result text */
-    }
-
-    .scoreDisplay {
-        font-size: 3rem; /* Significantly smaller score numbers */
-    }
-
-    .container-seeya{
-        font-size:1.2rem;
-        padding: 10px 10px; 
-        display:flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        max-width: 500px;
-        width:100%;
-    }
-
-    /* Weather App adjustments */
-    .cityInput {
-        width: 90%; /* Make input flexible */
-        font-size: 1.5rem;
-    }
-
-    .card {
-        padding: 10px 5px;
-        margin: 10px;
-    }
-
-    .cityDisplay, .tempDisplay {
-        font-size: 2rem; /* Smaller weather city/temp */
-    }
-
-    .weatherEmoji {
-        font-size: 4rem; /* Smaller weather emoji */
-    }
-
-    /* Calculator buttons */
-    button[type="calc"] {
-        width: 70px; /* Make calculator buttons smaller */
-        height: 70px;
-        font-size: 2rem;
-    }
-
-    #display {
-        font-size: 3rem; /* Smaller calculator display */
+    .zeal-container {
+        width: 100%;
         padding: 20px;
     }
 
-    /* Conversion app forms */
-    form {
-        max-width: 95%; /* Allow forms to take more width */
+    /* Flex adjustments for budget page containers */
+    .container-green {
+        flex-direction: column;
     }
 
-    #textBox, #textBoxGas {
-        width: 80%; /* Make text boxes wider within form */
-        font-size: 1.5em;
-    }
-
-    .conversion-button, button[type="submit"], #refreshButton {
-        font-size: 1.5em; /* Smaller conversion buttons */
-        padding: 8px 15px;
-    }
-
-    .rps-img {
+    .green-wrapper,
+    .green-table-wrapper {
         width: 100%;
-        max-width: 130px;
-        margin: 0 auto;
-        display: block;
     }
 
-
-
-
-
-
+    /* Flex adjustments for zealous assistant page containers */
+    .zeal-wrapper,
+    .races-container-wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .right,
+    .left {
+        width: 100%;
+    }
 }
 
-/* --- Media Queries for Mobile Phones (max-width: 480px) --- */
-@media (max-width: 480px) {
-    /* Further reduce general font sizes for very small screens */
+@media screen and (max-width: 480px) {
+    /* General typography and padding for mobile view */
     h1, .title {
-        font-size: 2rem;
+        font-size: 28px;
     }
 
     p, label, select {
-        font-size: 1.2rem;
+        font-size: 20px;
     }
 
-    /* Adjust padding for overall sections */
-    #welcome, #close, #green, #r-p-s, #purple, #mathing, #rentalcar, #and-two-for-the-road, #packrace {
-        padding: 20px 15px; /* Reduce section padding */
-        height: auto; /* Allow height to adjust naturally */
+    #welcome, #close, #green, #r-p-s, #purple, #mathing {
+        padding: 20px 15px;
+        height: auto;
     }
 
-    /* Reduce gaps and padding for various elements */
-    .box-wrapper, .zeal-wrapper, .races-container-wrapper, .object-container {
-        gap: 15px;
+    /* More specific container adjustments for small screens */
+    .container-welcome,
+    .container-green,
+    .text-content,
+    .races-container-wrapper,
+    .gameplay,
+    .container-seeya,
+    .container,
+    .big-reveal,
+    .textcontent,
+    .object-container,
+    .zeal-container {
+        padding: 15px;
     }
 
-    /* Stop watch specific adjustments */
-    #watch-display {
-        font-size: 2rem;
+    /* Specific elements within containers for mobile */
+    .sbside__img,
+    .sbside__calculator {
+        width: 100%;
     }
-
-    #controls button {
-        font-size: 1rem;
-        padding: 5px;
-    }
-
-    /* Rock, Paper, Scissors image sizing and button layout */
-    .choices button {
-        flex: 1 1 100%; /* Make buttons full width on small mobiles */
+    
+    .vacay, .vacay-text-content {
         max-width: 100%;
-        margin-bottom: 10px; /* Add space between stacked buttons */
+        text-align: center;
     }
 
-    img {
-        width: 50%; /* Adjust image size within RPS buttons if needed */
-        margin: 0 auto;
-        display: block;
-    }
-
-    #playerDisplay, #peteDisplay {
-        font-size: 1.2rem;
-    }
-
-    #resultDisplay {
-        font-size: 1.5rem;
-    }
-
-    .scoreDisplay {
-        font-size: 2.5rem;
-    }
-
-    /* Calculator buttons on very small screens */
-    button[type="calc"] {
-        width: 60px; /* Even smaller calculator buttons */
-        height: 60px;
-        font-size: 1.5rem;
-    }
-
-    #display {
-        font-size: 2.5rem;
-    }
-
-    /* Adjust general form elements for very small screens */
-    #textBox, #textBoxGas {
-        width: 90%;
-        font-size: 1.2em;
-    }
-
-    label {
-        font-size: 1.2em;
-    }
-
-    .conversion-button, button[type="submit"], #refreshButton {
-        font-size: 1.2em;
-        padding: 6px 12px;
+    .box-wrapper {
+        flex-direction: column;
     }
 }
