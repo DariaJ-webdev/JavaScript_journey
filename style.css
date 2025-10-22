@@ -332,7 +332,7 @@ tr:nth-child(even) {
 
 #Toronto-banner {
     background: url("./toronto.jpg") no-repeat center  center;
-    position: relative; /* For positioning the pseudo-element */
+    position: relative;
     background-size: cover;
     background-position: center;
     height:850px;
@@ -341,7 +341,7 @@ tr:nth-child(even) {
     justify-content: center;
     text-align: center;
     color: white;
-    z-index: 1; /* Ensures content is above the pseudo-element */
+    z-index: 1; 
     
 }
 
@@ -369,19 +369,19 @@ margin-top: 50px;
 }
 
 .slides {
-    display: flex; /* Use flexbox to arrange slides, make only one will be visible */
+    display: flex; /* Used flexbox to arrange slides, make only one will be visible */
     width: 100%;
     
 }
 
 .slide {
-    display: none; /* Hide all slides by default */
+    display: none; /* Hid all slides by default */
     width: 100%;
-    flex-shrink: 0; /* Prevents slides from shrinking */
+    flex-shrink: 0; 
 }
 
 .slide.displaySlide {
-    display: block; /* Show only the slide with the 'displaySlide' class */
+    display: block; 
 }
 
 
